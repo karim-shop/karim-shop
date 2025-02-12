@@ -1,9 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
-    <title>My GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARIM - متجر إلكتروني</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            direction: rtl;
+            text-align: right;
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+        }
+        nav ul li {
+            margin: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 250px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to my GitHub Pages site!</h1>
+    <header>
+        مرحبًا بك في KARIM
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#products">المنتجات</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <h2>أفضل المنتجات بأفضل الأسعار</h2>
+        <p>تسوق الآن واستمتع بتجربة فريدة من نوعها</p>
+        <button onclick="location.href='#products'" style="background-color: #28a745; color: white; padding: 15px; font-size: 18px; border: none; border-radius: 5px; cursor: pointer;">تصفح المنتجات</button>
+    </section>
+    
+    <section id="products">
+        <h2>منتجاتنا</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="product1.jpg" alt="منتج 1">
+                <h3>منتج 1</h3>
+                <p>وصف قصير للمنتج</p>
+                <button>إضافة إلى السلة</button>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="منتج 2">
+                <h3>منتج 2</h3>
+                <p>وصف قصير للمنتج</p>
+                <button>إضافة إلى السلة</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>من نحن</h2>
+        <p>نحن KARIM، متجر إلكتروني يهدف إلى تقديم أفضل المنتجات بأفضل الأسعار</p>
+    </section>
+    
+    <section id="contact">
+        <h2>اتصل بنا</h2>
+        <p>للمزيد من المعلومات، يمكنك التواصل معنا عبر البريد الإلكتروني: example@example.com</p>
+    </section>
+    
+    <footer>
+        جميع الحقوق محفوظة &copy; 2025 KARIM
+    </footer>
 </body>
 </html>
