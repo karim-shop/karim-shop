@@ -1,0 +1,113 @@
+/* استيراد خط عربي جميل */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap');
+
+/* إعداد الألوان الأساسية */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #f8f9fa;
+    --accent-color: #ff6600;
+    --text-color: #333;
+}
+
+/* تحسين الخطوط والتنسيق العام */
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* تحسين الهيدر */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* تحسين شريط التنقل */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0056b3;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #004494;
+    border-radius: 5px;
+}
+
+/* تحسين الصفحة الرئيسية */
+#home {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* تحسين الأزرار */
+button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff4500;
+    transform: scale(1.1);
+}
+
+/* تصميم المنتجات */
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 280px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* تحسين الفوتر */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
