@@ -59,21 +59,28 @@ nav ul li a:hover {
 #home {
     background: url('background.jpg') no-repeat center center/cover;
     color: white;
-    padding: 100px 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 120px 20px;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* تحسين زر تصفح المنتجات */
+#home button {
+    display: inline-block;
+    margin: 20px auto;
 }
 
 /* تحسين الأزرار */
 button {
     background-color: var(--accent-color);
     color: white;
-    padding: 15px;
+    padding: 15px 20px;
     font-size: 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    margin-top: 15px;
 }
 
 button:hover {
@@ -81,20 +88,22 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* تصميم المنتجات */
+/* تحسين عرض المنتجات */
 .product-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
+/* تحسين تصميم بطاقة المنتج */
 .product {
     background: white;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
     text-align: center;
     transition: 0.3s;
 }
@@ -103,11 +112,44 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* تحسين الصور */
+.product img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
 /* تحسين الفوتر */
 footer {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+    padding: 20px;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+/* زر العودة للأعلى */
+footer button {
+    background-color: #ff6600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer button:hover {
+    background-color: #ff4500;
+    transform: scale(1.1);
+}
+
+/* إضافة تأثيرات عند تحميل الصفحة */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.product, #home, footer {
+    animation: fadeIn 0.8s ease-in-out;
 }
