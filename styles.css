@@ -7,6 +7,8 @@
     --secondary-color: #f8f9fa;
     --accent-color: #ff6600;
     --text-color: #333;
+    --button-hover: #ff4500;
+    --footer-bg: #0056b3;
 }
 
 /* تحسين الخطوط والتنسيق العام */
@@ -16,6 +18,7 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* تحسين الهيدر */
@@ -26,20 +29,31 @@ header {
     text-align: center;
     font-size: 28px;
     font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* تحسين شريط التنقل */
+nav {
+    background-color: var(--footer-bg);
+    padding: 10px 0;
+    position: sticky;
+    top: 70px;
+    z-index: 999;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #0056b3;
     margin: 0;
 }
 
 nav ul li {
-    margin: 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -48,18 +62,18 @@ nav ul li a {
     font-size: 18px;
     padding: 10px 15px;
     transition: 0.3s;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: #004494;
-    border-radius: 5px;
+    background-color: var(--primary-color);
 }
 
 /* تحسين الصفحة الرئيسية */
 #home {
     background: url('background.jpg') no-repeat center center/cover;
     color: white;
-    padding: 120px 20px;
+    padding: 150px 20px;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
@@ -74,17 +88,17 @@ nav ul li a:hover {
 button {
     background-color: var(--accent-color);
     color: white;
-    padding: 15px 20px;
+    padding: 15px 25px;
     font-size: 18px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
-    margin-top: 15px;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #ff4500;
+    background-color: var(--button-hover);
     transform: scale(1.1);
 }
 
@@ -94,7 +108,7 @@ button:hover {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 /* تحسين تصميم بطاقة المنتج */
@@ -103,9 +117,10 @@ button:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 320px;
+    width: 300px;
     text-align: center;
     transition: 0.3s;
+    border: 1px solid #ddd;
 }
 
 .product:hover {
@@ -114,33 +129,33 @@ button:hover {
 
 /* تحسين الصور */
 .product img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     object-fit: contain;
     margin-bottom: 10px;
 }
 
 /* تحسين الفوتر */
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--footer-bg);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     font-size: 16px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 /* زر العودة للأعلى */
 footer button {
-    background-color: #ff6600;
-    padding: 10px 20px;
-    border-radius: 5px;
+    background-color: var(--accent-color);
+    padding: 12px 25px;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 footer button:hover {
-    background-color: #ff4500;
+    background-color: var(--button-hover);
     transform: scale(1.1);
 }
 
@@ -150,6 +165,6 @@ footer button:hover {
     to { opacity: 1; transform: translateY(0); }
 }
 
-.product, #home, footer {
+.product, #home, footer, nav {
     animation: fadeIn 0.8s ease-in-out;
 }
