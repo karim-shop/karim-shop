@@ -4,79 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KARIM - متجر إلكتروني</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            direction: rtl;
-            text-align: right;
-            font-family: 'Tajawal', sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-size: 24px;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            background-color: #0056b3;
-        }
-        nav ul li {
-            margin: 10px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px 15px;
-        }
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-        .product-list {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .product {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            width: 250px;
-            text-align: center;
-        }
-        .product img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .product button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        footer {
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -95,7 +23,7 @@
     <section id="home">
         <h2>أفضل المنتجات بأفضل الأسعار</h2>
         <p>تسوق الآن واستمتع بتجربة فريدة من نوعها</p>
-        <button onclick="location.href='#products'" style="background-color: #28a745; color: white; padding: 15px; font-size: 18px; border: none; border-radius: 5px; cursor: pointer;">تصفح المنتجات</button>
+        <button onclick="location.href='#products'">تصفح المنتجات</button>
     </section>
     
     <section id="products">
@@ -127,7 +55,8 @@
     </section>
     
     <footer>
-        جميع الحقوق محفوظة &copy; 2025 KARIM
+        <p>جميع الحقوق محفوظة &copy; 2025 KARIM</p>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">🔝 العودة إلى الأعلى</button>
     </footer>
 </body>
 </html>
